@@ -11,8 +11,8 @@ class App extends Component {
       curQuestionID: 0,
       curQuestion: questions[0],
       userAnswers: [],          // for example:  
-                                // [{q_id: 0, userAnswer: 3, correct: 2, isCorrect: false} , 
-                                //  {q_id: 1, userAnswer: 2, correct: 2, isCorrect: true} ]
+      // [{q_id: 0, userSelectedOption: 3} , 
+      //  {q_id: 1, userSelectedOption: 2} ]
       isFinished: false
     }
   }
@@ -39,12 +39,34 @@ class App extends Component {
 
   getCurrentQuestionByID = () => questions.filter(q => q.questionID === this.state.curQuestionID)[0]
 
-  assignChosenAnswer = (q_id, answer_id) => {
-    console.log("assigning to q_id: " + q_id + " the answer_id : " + answer_id)
+  assignChosenAnswer = async (q_id, userSelected_id) => {
 
+    const userAnswer = { q_id, userSelected_id }
+    const userAnswers = this.state.userAnswers
+
+    if (this.answerExist(userAnswer)) 
+      this.updateExistingAnswer(userAnswer)
+    
+    else {
+      userAnswers.push(userAnswer)
+      await this.setState({ userAnswers })
+    }
+
+    console.log(this.state.userAnswers)
   }
+
+  updateExistingAnswer = async userAnswer => {
+    let userAnswers = this.state.userAnswers
+    for (let i = 0; i < userAnswers.length; i++)
+      if (userAnswers[i].q_id === userAnswer.q_id)
+        userAnswers[i].userSelected_id = userAnswer.userSelected_id
+  }
+
+  answerExist = (userAnswer) => this.state.userAnswers.some(ua => ua.q_id === userAnswer.q_id)
+
   renderQuestions = () => <Question
     question={this.getCurrentQuestionByID()}
+    userAnswers = {this.state.userAnswers}
     prevQuestion={this.prevQuestion}
     nextQuestion={this.nextQuestion}
     finishTest={this.renderTestResultComponent}
@@ -55,8 +77,8 @@ class App extends Component {
 
 
   render() {
-    const todos = ["this.props.question.questionID === 0 ? --> !== 0 , for next", "userSelection in questions"]
-    console.log(todos)
+    // const todos = ["this.props.question.questionID === 0 ? --> !== 0 , for next", "userSelection in questions"]
+    // console.log(todos)
 
     return (
       <div className="App">

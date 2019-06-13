@@ -33,9 +33,12 @@ class Question extends Component {
     }
 
     userSelection = () => {
-        return true
+        let userAnswer = this.getUserAnswer()
+        return false
     }
+    getUserAnswer = () => {
 
+    }
     renderInputById = (answer) => <input type="radio" value={answer.id} name={answer.id} />
 
     renderControls = () => {
@@ -47,7 +50,7 @@ class Question extends Component {
                     :
                     null}
                 {/* render finish or next */}
-                {this.props.question.questionID === 1 ?
+                {this.props.question.questionID === 4 ?
                     <button onClick={this.props.finishTest}>Finish</button>
                     :
                     <button onClick={this.props.nextQuestion}>Next</button>}
