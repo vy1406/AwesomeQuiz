@@ -25,20 +25,13 @@ class Question extends Component {
         return (
             <div onChange={event => this.setAnswer(event)}>
                 <input type="radio" value={answers[0].id} name="answer" /> {answers[0].text} <br />
-                <input type="radio" value={answers[1].id} name="answer"  defaultChecked={this.userSelection()}/> {answers[1].text} <br />
+                <input type="radio" value={answers[1].id} name="answer" /> {answers[1].text} <br />
                 <input type="radio" value={answers[2].id} name="answer" /> {answers[2].text} <br />
                 <input type="radio" value={answers[3].id} name="answer" /> {answers[3].text} <br />
             </div>
         )
     }
 
-    userSelection = () => {
-        let userAnswer = this.getUserAnswer()
-        return false
-    }
-    getUserAnswer = () => {
-
-    }
     renderInputById = (answer) => <input type="radio" value={answer.id} name={answer.id} />
 
     renderControls = () => {

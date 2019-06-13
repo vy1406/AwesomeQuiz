@@ -39,9 +39,9 @@ class App extends Component {
 
   getCurrentQuestionByID = () => questions.filter(q => q.questionID === this.state.curQuestionID)[0]
 
-  assignChosenAnswer = async (q_id, userSelected_id) => {
+  assignChosenAnswer = async (q_id, userSelectedOption_id) => {
 
-    const userAnswer = { q_id, userSelected_id }
+    const userAnswer = { q_id, userSelectedOption_id }
     const userAnswers = this.state.userAnswers
 
     if (this.answerExist(userAnswer)) 
@@ -59,7 +59,7 @@ class App extends Component {
     let userAnswers = this.state.userAnswers
     for (let i = 0; i < userAnswers.length; i++)
       if (userAnswers[i].q_id === userAnswer.q_id)
-        userAnswers[i].userSelected_id = userAnswer.userSelected_id
+        userAnswers[i].userSelectedOption_id = userAnswer.userSelectedOption_id
   }
 
   answerExist = (userAnswer) => this.state.userAnswers.some(ua => ua.q_id === userAnswer.q_id)
@@ -73,7 +73,7 @@ class App extends Component {
     assignChosenAnswer={this.assignChosenAnswer}
   />
 
-  renderTestResults = () => <TestResults />
+  renderTestResults = () => <TestResults userAnswers={this.state.userAnswers} questions={questions}/>
 
 
   render() {
