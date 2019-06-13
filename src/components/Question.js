@@ -8,7 +8,7 @@ class Question extends Component {
 
     renderQuestion = () => {
         return (
-            <div className="question">
+            <div className="title">
                 {this.props.question.question}
             </div>
         )
@@ -23,7 +23,7 @@ class Question extends Component {
         const answers = this.props.question.answers
 
         return (
-            <div onChange={event => this.setAnswer(event)}>
+            <div onChange={event => this.setAnswer(event)} className="options">
                 <input type="radio" value={answers[0].id} name="answer" /> {answers[0].text} <br />
                 <input type="radio" value={answers[1].id} name="answer" /> {answers[1].text} <br />
                 <input type="radio" value={answers[2].id} name="answer" /> {answers[2].text} <br />
@@ -36,24 +36,24 @@ class Question extends Component {
 
     renderControls = () => {
         return (
-            <div>
+            <div className="controls">
                 {/* render prev or not */}
                 {this.props.question.questionID !== 0 ?
-                    <button onClick={this.props.prevQuestion}>Prev</button>
+                    <button onClick={this.props.prevQuestion} className="prev-btn">PREV</button>
                     :
                     null}
                 {/* render finish or next */}
-                {this.props.question.questionID === 4 ?
-                    <button onClick={this.props.finishTest}>Finish</button>
+                {this.props.question.questionID === 9 ?
+                    <button onClick={this.props.finishTest} className="finish-btn">FINISH</button>
                     :
-                    <button onClick={this.props.nextQuestion}>Next</button>}
+                    <button onClick={this.props.nextQuestion} className="next-btn">NEXT</button>}
             </div>
         )
     }
 
     render() {
         return (
-            <div>
+            <div className="question">
                 {this.renderQuestion()}
                 {this.renderAnswers()}
                 {this.renderControls()}

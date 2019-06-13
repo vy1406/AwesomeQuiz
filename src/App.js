@@ -74,7 +74,6 @@ class App extends Component {
 
   renderTestResults = () => <TestResults userAnswers={this.state.userAnswers} questions={questions}/>
 
-
   render() {
     return (
       <div className="App">
