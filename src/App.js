@@ -52,7 +52,6 @@ class App extends Component {
       await this.setState({ userAnswers })
     }
 
-    console.log(this.state.userAnswers)
   }
 
   updateExistingAnswer = async userAnswer => {
@@ -77,9 +76,6 @@ class App extends Component {
 
 
   render() {
-    // const todos = ["this.props.question.questionID === 0 ? --> !== 0 , for next", "userSelection in questions"]
-    // console.log(todos)
-
     return (
       <div className="App">
         {this.state.isFinished

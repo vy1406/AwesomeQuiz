@@ -17,13 +17,15 @@ class TestResults extends Component {
             if ( this.props.userAnswers[i].q_id === q_id)
                 return this.props.userAnswers[i]
     }
+
     renderResults = correctAnswers => {
         return (
             <div>
-                {correctAnswers} out of 5!!
+                {correctAnswers} out of 10!!
             </div>
         )
     }
+
     render() {
         const correctAnswers  = this.calculateGrade()
         return (

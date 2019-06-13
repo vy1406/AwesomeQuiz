@@ -113,5 +113,120 @@
             }
         ],
         "correct": 1
+    },
+    {
+        "questionID": 5,
+        "question": "How could a man go outside in the pouring rain without protection, and not have a hair on his head get wet?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "He was bald..."
+            },
+            {
+                "id": 2,
+                "text": "Dunno"
+            },
+            {
+                "id": 3,
+                "text": "Nothing is eternal.. "
+            },
+            {
+                "id": 4,
+                "text": "wrong answer."
+            }
+        ],
+        "correct": 1
+    },
+    {
+        "questionID": 6,
+        "question": "What is white and black, but red all over?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Zebra"
+            },
+            {
+                "id": 2,
+                "text": "Old movie"
+            },
+            {
+                "id": 3,
+                "text": "Hot-dog"
+            },
+            {
+                "id": 4,
+                "text": "The newspaper is “read” all over."
+            }
+        ],
+        "correct": 4
+    },
+    {
+        "questionID": 7,
+        "question": "Where is an ocean with no water?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "On a map"
+            },
+            {
+                "id": 2,
+                "text": "Dunno..."
+            },
+            {
+                "id": 3,
+                "text": "In my dreams?"
+            },
+            {
+                "id": 4,
+                "text": "Choose first one"
+            }
+        ],
+        "correct": 1
+    },
+    {
+        "questionID": 8,
+        "question": " What type hair does an ocean have?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Depends on the weather."
+            },
+            {
+                "id": 2,
+                "text": "Wavy... lol "
+            },
+            {
+                "id": 3,
+                "text": "Blue"
+            },
+            {
+                "id": 4,
+                "text": "Typical"
+            }
+        ],
+        "correct": 2
+    },
+    {
+        "questionID": 9,
+        "question": "Why did Superman cross the road?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "I'm fine."
+            },
+            {
+                "id": 2,
+                "text": "???"
+            },
+            {
+                "id": 3,
+                "text": "He wanted to get to the supermarket."
+            },
+            {
+                "id": 4,
+                "text": "Cuz why not ? "
+            }
+        ],
+        "correct": 2
     }
 ]
