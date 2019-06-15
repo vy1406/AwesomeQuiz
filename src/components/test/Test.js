@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-
 import Question from '../question/Question';
 import TestResults from '../testResults/TestResults';
+import "./test.css"
+
 const questions = require('../../utils/questions.json')
 const LIMIT = questions.length
 
@@ -86,6 +87,8 @@ class Test extends Component {
 
     checkIfUserChose = () => this.getUserAnswer(this.state.curQuestionID) === undefined ? true : false
 
+    finishTest = (event) => this.renderTestResultComponent()
+    
     renderControls = () => {
         return (
             <div className="controls">
@@ -95,14 +98,16 @@ class Test extends Component {
                     :
                     null}
                 {/* render finish or next */}
-                {this.state.curQuestionID === LIMIT ?
-                    <button onClick={this.renderTestResultComponent} hidden={this.checkIfUserChose()} className="finish-btn">FINISH</button>
+                {this.state.curQuestionID === LIMIT -1 ?
+                    // <button onClick={this.renderTestResultComponent} hidden={this.checkIfUserChose()} className="finish-btn">FINISH</button>
+                    <button  hidden={this.checkIfUserChose()} onClick={(e) => { if (window.confirm('Are u sure ?')) this.finishTest(e) }}  className="finish-btn">FINISH</button>
                     :
                     <button onClick={this.nextQuestion} hidden={this.checkIfUserChose()} className="next-btn">NEXT</button>}
+                    
             </div>
         )
     }
-
+//  <button onClick={(e) => { if (window.confirm('Are item?')) this.deleteItem(e) }}>Delete</button>
     renderQuestionsAndControls = () => {
         return (
             <div>
@@ -111,17 +116,18 @@ class Test extends Component {
             </div>
         )
     }
-
+ 
     render() {
         return (
             <div>
                 {
                     this.state.isFinished
-                    ?
-                    this.renderTestResults()
-                    :
-                    this.renderQuestionsAndControls()
+                        ?
+                        this.renderTestResults()
+                        :
+                        this.renderQuestionsAndControls()
                 }
+
             </div>
         )
     }
