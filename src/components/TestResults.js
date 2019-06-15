@@ -21,7 +21,7 @@ class TestResults extends Component {
     renderResults = correctAnswers => {
         return (
             <div>
-                {correctAnswers} out of 10!!
+                You answered {correctAnswers}%! 
             </div>
         )
     }

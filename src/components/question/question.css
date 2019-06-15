@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #c7ecee;
+    --secondary-color: #dff9fb;
+    --control-color:#7ed6df;
+  }
+  .question {
+    margin: auto;
+    padding:50px;
+    width: 50%;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "t"
+    "o"
+    "c";
+  }
+  
+  .title{
+  
+    grid-area: t;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+  }
+  
+  .options{
+    
+    grid-area: o;
+    text-align: left;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  .options > * {
+    margin:10px;
+  }
+  
+  .controls{
+    padding:10px;
+    grid-area: c;
+    display: grid;
+    grid-template-areas: 
+    "p . . . . n";
+  }
+  
+  .controls > * {
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24), 0 10px 50px 0 rgba(0,0,0,0.19);
+    font-family: 'Concert One', serif;
+    cursor: pointer;
+    background-color: var(--control-color);
+  }
+  
+  .prev-btn{
+    grid-area: p;
+    
+  }
+  
+  .next-btn{
+    grid-area: n;
+    
+  }
+  
+  
+  .finish-btn{
+    grid-area: n;
+    
+  }

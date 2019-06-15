@@ -4,6 +4,10 @@
         "question": "If an electric train is moving north at 100mph and a wind is blowing to the west at 10mph, which way does the smoke blow",
         "answers": [
             {
+                "id": 0,
+                "text": "South-East"
+            },
+            {
                 "id": 1,
                 "text": "Left"
             },
@@ -14,11 +18,8 @@
             {
                 "id": 3,
                 "text": "An electric train has no smoke."
-            },
-            {
-                "id": 4,
-                "text": "South-East"
             }
+            
         ],
         "correct": 3
     },
@@ -26,6 +27,10 @@
         "questionID": 1,
         "question": "Uncle Bill’s farm had a terrible storm and all but seven sheep were killed. How many sheep are still alive?",
         "answers": [
+            {
+                "id": 0,
+                "text": "Uncle Bill is a sheep"
+            },
             {
                 "id": 1,
                 "text": "-5"
@@ -37,10 +42,6 @@
             {
                 "id": 3,
                 "text": "3.14"
-            },
-            {
-                "id": 4,
-                "text": "Uncle Bill is a sheep"
             }
         ],
         "correct": 2
@@ -49,6 +50,10 @@
         "questionID": 2,
         "question": "What has a head, a tail, but does not have a body?",
         "answers": [
+            {
+                "id": 0,
+                "text": "Helicopter"
+            },
             {
                 "id": 1,
                 "text": "Head & Shoulders"
@@ -60,11 +65,8 @@
             {
                 "id": 3,
                 "text": "Akon - Lonely ( i have no body ... ) "
-            },
-            {
-                "id": 4,
-                "text": "Helicopter"
             }
+            
         ],
         "correct": 2
     },
@@ -72,6 +74,10 @@
         "questionID": 3,
         "question": "“The attorney is my brother,” testified the accountant. But the attorney testified he did not have a brother. Who is lying?",
         "answers": [
+            {
+                "id": 0,
+                "text": "Neither one, because the accountant was his sister."
+            },
             {
                 "id": 1,
                 "text": "Never gonna give you up... never gonna let you down.... "
@@ -83,18 +89,18 @@
             {
                 "id": 3,
                 "text": "Shrek ? "
-            },
-            {
-                "id": 4,
-                "text": "Neither one, because the accountant was his sister."
             }
         ],
-        "correct": 4
+        "correct": 0
     },
     {
         "questionID": 4,
         "question": "What is it that if you have, you want to share me, and if you share, you do not have?",
         "answers": [
+            {
+                "id": 0,
+                "text": "Wallmart"
+            },
             {
                 "id": 1,
                 "text": "A secret"
@@ -106,10 +112,6 @@
             {
                 "id": 3,
                 "text": "options..."
-            },
-            {
-                "id": 4,
-                "text": "Wallmart"
             }
         ],
         "correct": 1
@@ -119,28 +121,32 @@
         "question": "How could a man go outside in the pouring rain without protection, and not have a hair on his head get wet?",
         "answers": [
             {
-                "id": 1,
+                "id": 0,
                 "text": "He was bald..."
             },
             {
-                "id": 2,
+                "id": 1,
                 "text": "Dunno"
             },
             {
-                "id": 3,
+                "id": 2,
                 "text": "Nothing is eternal.. "
             },
             {
-                "id": 4,
+                "id": 3,
                 "text": "wrong answer."
             }
         ],
-        "correct": 1
+        "correct": 0
     },
     {
         "questionID": 6,
         "question": "What is white and black, but red all over?",
         "answers": [
+            {
+                "id": 0,
+                "text": "The newspaper is “read” all over."
+            },
             {
                 "id": 1,
                 "text": "Zebra"
@@ -152,18 +158,18 @@
             {
                 "id": 3,
                 "text": "Hot-dog"
-            },
-            {
-                "id": 4,
-                "text": "The newspaper is “read” all over."
             }
         ],
-        "correct": 4
+        "correct": 0
     },
     {
         "questionID": 7,
         "question": "Where is an ocean with no water?",
         "answers": [
+            {
+                "id": 0,
+                "text": "Choose the second one"
+            },
             {
                 "id": 1,
                 "text": "On a map"
@@ -175,10 +181,6 @@
             {
                 "id": 3,
                 "text": "In my dreams?"
-            },
-            {
-                "id": 4,
-                "text": "Choose first one"
             }
         ],
         "correct": 1
@@ -187,6 +189,10 @@
         "questionID": 8,
         "question": " What type hair does an ocean have?",
         "answers": [
+            {
+                "id": 0,
+                "text": "Typical"
+            },
             {
                 "id": 1,
                 "text": "Depends on the weather."
@@ -198,10 +204,6 @@
             {
                 "id": 3,
                 "text": "Blue"
-            },
-            {
-                "id": 4,
-                "text": "Typical"
             }
         ],
         "correct": 2
@@ -210,6 +212,10 @@
         "questionID": 9,
         "question": "Why did Superman cross the road?",
         "answers": [
+            {
+                "id": 0,
+                "text": "Cuz why not ? "
+            },
             {
                 "id": 1,
                 "text": "I'm fine."
@@ -221,10 +227,6 @@
             {
                 "id": 3,
                 "text": "He wanted to get to the supermarket."
-            },
-            {
-                "id": 4,
-                "text": "Cuz why not ? "
             }
         ],
         "correct": 2
