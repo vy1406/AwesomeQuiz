@@ -40,31 +40,11 @@ class Question extends Component {
         )
     }
 
-    // checkIfUserChose = () => this.props.userAnswer === undefined ? true : false
-
-    // renderControls = () => {
-    //     return (
-    //         <div className="controls">
-    //             {/* render prev or not */}
-    //             {this.props.question.questionID !== 0 ?
-    //                 <button onClick={this.props.prevQuestion} className="prev-btn">PREV</button>
-    //                 :
-    //                 null}
-    //             {/* render finish or next */}
-    //             {this.props.question.questionID === 9 ?
-    //                 <button onClick={this.props.finishTest} hidden={this.checkIfUserChose()} className="finish-btn">FINISH</button>
-    //                 :
-    //                 <button onClick={this.props.nextQuestion} hidden={this.checkIfUserChose()} className="next-btn">NEXT</button>}
-    //         </div>
-    //     )
-    // }
-
     render() {
         return (
             <div className="question">
                 {this.renderQuestion()}
                 {this.renderAnswers()}
-                {/* {this.renderControls()} */}
             </div>
         )
     }
