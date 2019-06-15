@@ -1,6 +1,7 @@
 
 
   .question {
+    grid-area: q;
     margin: auto;
     padding:50px;
     width: 50%;
@@ -8,8 +9,7 @@
     display: grid;
     grid-template-areas: 
     "t"
-    "o"
-    "c";
+    "o";
   }
   
   .title{

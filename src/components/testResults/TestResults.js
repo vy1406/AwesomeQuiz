@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import "../testResults/testResults.css"
 class TestResults extends Component {
 
     calculateGrade = () => {
@@ -21,7 +21,7 @@ class TestResults extends Component {
     renderResults = correctAnswers => {
         return (
             <div>
-                You answered {correctAnswers}%! 
+                You answered {correctAnswers} out of {this.props.userAnswers.length}! 
             </div>
         )
     }
@@ -29,7 +29,7 @@ class TestResults extends Component {
     render() {
         const correctAnswers  = this.calculateGrade()
         return (
-             <div>TEST RESULTS:
+             <div className="results">
                  {this.renderResults(correctAnswers)}
              </div>
         )

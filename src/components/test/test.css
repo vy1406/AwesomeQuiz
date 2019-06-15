@@ -3,25 +3,33 @@
     --secondary-color: #dff9fb;
     --control-color:#7ed6df;
   }
-
+.test{
+  /* margin:auto; */
+  display: grid;
+    grid-template-areas: 
+    "q"
+    "c";
+}
   .controls{
     padding:10px;
     grid-area: c;
     display: grid;
     grid-template-areas: 
-    "p . . . . n";
+    "p . n";
   }
   
   .controls > * {
+    margin: auto;
     box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24), 0 10px 50px 0 rgba(0,0,0,0.19);
     font-family: 'Concert One', serif;
     cursor: pointer;
+    width : 15vw;
     background-color: var(--control-color);
   }
   
+  
   .prev-btn{
     grid-area: p;
-    
   }
   
   .next-btn{

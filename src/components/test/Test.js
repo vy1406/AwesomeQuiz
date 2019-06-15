@@ -13,7 +13,8 @@ class Test extends Component {
         this.state = {
             curQuestionID: 0,
             curQuestion: questions[0],
-            userAnswers: [],          // for example:  
+            userAnswers: [],          
+            // ^ for example:  
             // [{q_id: 0, userSelectedOption_id: 3} , 
             //  {q_id: 1, userSelectedOption_id: 2} ]
             isFinished: false
@@ -86,8 +87,6 @@ class Test extends Component {
     renderTestResults = () => <TestResults userAnswers={this.state.userAnswers} questions={questions} />
 
     checkIfUserChose = () => this.getUserAnswer(this.state.curQuestionID) === undefined ? true : false
-
-    finishTest = (event) => this.renderTestResultComponent()
     
     renderControls = () => {
         return (
@@ -100,7 +99,7 @@ class Test extends Component {
                 {/* render finish or next */}
                 {this.state.curQuestionID === LIMIT -1 ?
                     // <button onClick={this.renderTestResultComponent} hidden={this.checkIfUserChose()} className="finish-btn">FINISH</button>
-                    <button  hidden={this.checkIfUserChose()} onClick={(e) => { if (window.confirm('Are u sure ?')) this.finishTest(e) }}  className="finish-btn">FINISH</button>
+                    <button  hidden={this.checkIfUserChose()} onClick={(e) => { if (window.confirm('Are u sure ?')) this.renderTestResultComponent() }}  className="finish-btn">FINISH</button>
                     :
                     <button onClick={this.nextQuestion} hidden={this.checkIfUserChose()} className="next-btn">NEXT</button>}
                     
@@ -110,7 +109,7 @@ class Test extends Component {
 //  <button onClick={(e) => { if (window.confirm('Are item?')) this.deleteItem(e) }}>Delete</button>
     renderQuestionsAndControls = () => {
         return (
-            <div>
+            <div className="test">
                 {this.renderQuestions()}
                 {this.renderControls()}
             </div>

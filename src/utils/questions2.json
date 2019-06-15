@@ -1,0 +1,234 @@
+[
+    {
+        "questionID":0,
+        "question": "If an electric train is moving north at 100mph and a wind is blowing to the west at 10mph, which way does the smoke blow",
+        "answers": [
+            {
+                "id": 0,
+                "text": "South-East"
+            },
+            {
+                "id": 1,
+                "text": "Left"
+            },
+            {
+                "id": 2,
+                "text": "Down"
+            },
+            {
+                "id": 3,
+                "text": "An electric train has no smoke."
+            }
+            
+        ],
+        "correct": 3
+    },
+    {
+        "questionID": 1,
+        "question": "Uncle Bill’s farm had a terrible storm and all but seven sheep were killed. How many sheep are still alive?",
+        "answers": [
+            {
+                "id": 0,
+                "text": "Uncle Bill is a sheep"
+            },
+            {
+                "id": 1,
+                "text": "-5"
+            },
+            {
+                "id": 2,
+                "text": "Lucky number 7"
+            },
+            {
+                "id": 3,
+                "text": "3.14"
+            }
+        ],
+        "correct": 2
+    },
+    {
+        "questionID": 2,
+        "question": "What has a head, a tail, but does not have a body?",
+        "answers": [
+            {
+                "id": 0,
+                "text": "Helicopter"
+            },
+            {
+                "id": 1,
+                "text": "Head & Shoulders"
+            },
+            {
+                "id": 2,
+                "text": "A coin"
+            },
+            {
+                "id": 3,
+                "text": "Akon - Lonely ( i have no body ... ) "
+            }
+            
+        ],
+        "correct": 2
+    },
+    {
+        "questionID": 3,
+        "question": "“The attorney is my brother,” testified the accountant. But the attorney testified he did not have a brother. Who is lying?",
+        "answers": [
+            {
+                "id": 0,
+                "text": "Neither one, because the accountant was his sister."
+            },
+            {
+                "id": 1,
+                "text": "Never gonna give you up... never gonna let you down.... "
+            },
+            {
+                "id": 2,
+                "text": "em... What..."
+            },
+            {
+                "id": 3,
+                "text": "Shrek ? "
+            }
+        ],
+        "correct": 0
+    },
+    {
+        "questionID": 4,
+        "question": "What is it that if you have, you want to share me, and if you share, you do not have?",
+        "answers": [
+            {
+                "id": 0,
+                "text": "Wallmart"
+            },
+            {
+                "id": 1,
+                "text": "A secret"
+            },
+            {
+                "id": 2,
+                "text": "An apple!"
+            },
+            {
+                "id": 3,
+                "text": "options..."
+            }
+        ],
+        "correct": 1
+    },
+    {
+        "questionID": 5,
+        "question": "How could a man go outside in the pouring rain without protection, and not have a hair on his head get wet?",
+        "answers": [
+            {
+                "id": 0,
+                "text": "He was bald..."
+            },
+            {
+                "id": 1,
+                "text": "Dunno"
+            },
+            {
+                "id": 2,
+                "text": "Nothing is eternal.. "
+            },
+            {
+                "id": 3,
+                "text": "wrong answer."
+            }
+        ],
+        "correct": 0
+    },
+    {
+        "questionID": 6,
+        "question": "What is white and black, but red all over?",
+        "answers": [
+            {
+                "id": 0,
+                "text": "The newspaper is “read” all over."
+            },
+            {
+                "id": 1,
+                "text": "Zebra"
+            },
+            {
+                "id": 2,
+                "text": "Old movie"
+            },
+            {
+                "id": 3,
+                "text": "Hot-dog"
+            }
+        ],
+        "correct": 0
+    },
+    {
+        "questionID": 7,
+        "question": "Where is an ocean with no water?",
+        "answers": [
+            {
+                "id": 0,
+                "text": "Choose the second one"
+            },
+            {
+                "id": 1,
+                "text": "On a map"
+            },
+            {
+                "id": 2,
+                "text": "Dunno..."
+            },
+            {
+                "id": 3,
+                "text": "In my dreams?"
+            }
+        ],
+        "correct": 1
+    },
+    {
+        "questionID": 8,
+        "question": " What type hair does an ocean have?",
+        "answers": [
+            {
+                "id": 0,
+                "text": "Typical"
+            },
+            {
+                "id": 1,
+                "text": "Depends on the weather."
+            },
+            {
+                "id": 2,
+                "text": "Wavy... lol "
+            },
+            {
+                "id": 3,
+                "text": "Blue"
+            }
+        ],
+        "correct": 2
+    },
+    {
+        "questionID": 9,
+        "question": "Why did Superman cross the road?",
+        "answers": [
+            {
+                "id": 0,
+                "text": "Cuz why not ? "
+            },
+            {
+                "id": 1,
+                "text": "I'm fine."
+            },
+            {
+                "id": 2,
+                "text": "???"
+            },
+            {
+                "id": 3,
+                "text": "He wanted to get to the supermarket."
+            }
+        ],
+        "correct": 2
+    }
+]
